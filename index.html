@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Escolar - 2ª Série A</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="header-banner">
+    <div class="banner-overlay"></div>
+    <img src="https://i.imgur.com/QMsvffl.png" alt="Banner da Turma" class="banner-image">
+    <h1 class="banner-title"><i class="fas fa-calendar-alt"></i> Calendário da Turma</h1>
+</div>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calendar-alt"></i> Calendário da Turma - 2ª Série A</h1>
+            <div class="last-update" id="last-update">Última atualização: carregando...</div>
+        </header>
+        
+        <div class="calendar-controls">
+            <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+            <h2 id="current-month">Mês Ano</h2>
+            <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+            <button id="refresh-btn"><i class="fas fa-sync-alt"></i> Atualizar</button>
+        </div>
+        
+        <div id="calendar" class="calendar-grid"></div>
+        
+        <div class="legend">
+            <div class="legend-item"><span class="color-event"></span> Eventos</div>
+            <div class="legend-item"><span class="color-test"></span> Provas</div>
+            <div class="legend-item"><span class="color-holiday"></span> Feriados</div>
+        </div>
+        
+        <footer>
+            <p>Atualize a planilha para alterar o calendário: <span id="sheet-link">[Clique Aqui]</span></p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/pt-br.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
